@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dividerMarginStart">67dp</dimen>
+    <dimen name="dividerMarginEnd">16dp</dimen>
+    <dimen name="dividerMarginBottom">8dp</dimen>
+    <dimen name="dividerMarginTop">8dp</dimen>
+
+    <dimen name="displayHeaderMarginStart">8dp</dimen>
+    <dimen name="displayHeaderMarginBottom">6dp</dimen>
+
+    <dimen name="displayPaddingEnd">8dp</dimen>
+    <dimen name="displayPaddingStart">22dp</dimen>
+
+    <dimen name="displayMarginTop">12dp</dimen>
+    <dimen name="displayMarginBottom">12dp</dimen>
+
+    <dimen name="displayDrawablePadding">22dp</dimen>
+
+    <dimen name="displayCardMarginEnd">8dp</dimen>
+    <dimen name="displayCardMarginStart">8dp</dimen>
+
+    <dimen name="widget_margin">8dp</dimen>
+</resources>

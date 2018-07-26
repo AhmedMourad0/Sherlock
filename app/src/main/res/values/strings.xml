@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Sherlock</string>
+
+    <string name="cd_section_image">Section image</string>
+
+    <string name="search">Search</string>
+    <string name="found_a_child">Found a child</string>
+    <string name="coming_soon">Coming soon</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="point_location_on_map">Point coordinates on map</string>
+    <string name="age">Age:</string>
+    <string name="height">Height:</string>
+    <string name="gender">Gender:</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="skin_color">Skin color:</string>
+    <string name="hair_color">Hair color:</string>
+    <string name="choose_a_picture">Choose a picture</string>
+    <string name="notes">Notes</string>
+    <string name="publish">Publish</string>
+    <string name="no_location_specified">No coordinates specified…</string>
+    <string name="no_last_known_location_specified">No last known coordinates specified…</string>
+
+    <string name="error">Something went wrong!</string>
+    <string name="error_no_cause">Something went wrong!\n%1$s</string>
+    <string name="error_cause">Something went wrong!\n%1$s\n%2$s</string>
+
+    <string name="network_error">Connection Failed!\nCheck your network connection.</string>
+    <string name="network_error_no_cause">Connection Failed!\n%1$s</string>
+    <string name="network_error_cause">Connection Failed!\n%1$s\n%2$s</string>
+
+    <string name="publishing">Publishing…</string>
+    <string name="something_went_wrong">Something went wrong!</string>
+    <string name="published_successfully">Published successfully!</string>
+
+    <string name="pick_a_folder">Pick a folder</string>
+    <string name="tap_to_select">Tap to select</string>
+
+    <string name="camera" translatable="false">Camera</string>
+    <string name="name">Name:</string>
+
+    <string name="cover_photo">Cover photo</string>
+    <string name="username">Faculty of Engineering</string>
+    <string name="email">fac_something@eng.com</string>
+    <string name="employees">6000 Students, 20 Employees</string>
+    <string name="rating">0.0 / 5.0</string>
+    <string name="badges">Badges</string>
+    <string name="time_waster">Time Waster</string>
+    <string name="creativity_killer">Creativity Killer</string>
+    <string name="zombies_factory">Zombie Factory</string>
+    <string name="see_more">See More</string>
+    <string name="general_details">General Details</string>
+    <string name="picture">Picture</string>
+    <string name="description">Description</string>
+    <string name="details">Details</string>
+    <string name="not_available">Not available</string>
+    <string name="white_skin">White skin</string>
+    <string name="wheatish_skin">Wheatish skin</string>
+    <string name="dark_skin">Dark skin</string>
+    <string name="blonde_hair">Blonde hair</string>
+    <string name="dark_hair">Dark hair</string>
+    <string name="brown_hair">Brown hair</string>
+
+    <string name="years_range">%1$s years old</string>
+    <string name="height_range">%1$s to %2$s</string>
+    <string name="location">%1$s, %2$s</string>
+    <string name="results">Results</string>
+    <string name="ahmed_mourad">Ahmed Mourad</string>
+    <string name="date">Yesterday at 05:24 AM</string>
+    <string name="child">Child</string>
+    <string name="location_label">Location:</string>
+    <string name="no_internet_connection">No internet connection!</string>
+
+    <string name="widget_title">Sherlock - Last Search Results</string>
+    <string name="no_results_found">No results found</string>
+
+</resources>
