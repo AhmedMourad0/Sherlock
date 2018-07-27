@@ -62,7 +62,7 @@ public final class ErrorUtils {
 
 		if (throwable == null)
 			Toast.makeText(context,
-					R.string.error,
+					context.getString(R.string.error),
 					Toast.LENGTH_LONG
 			).show();
 		else if (throwable.getCause() == null)

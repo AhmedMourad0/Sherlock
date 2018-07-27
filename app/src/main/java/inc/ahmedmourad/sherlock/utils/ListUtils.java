@@ -28,7 +28,7 @@ public final class ListUtils {
 	@NonNull
 	public static List<SearchResult> toSearchResults(@Nullable final List<ResultEntity> results) {
 
-		if (results == null)
+		if (results == null || results.isEmpty())
 			return new ArrayList<>(0);
 
 		final List<SearchResult> list = new ArrayList<>(results.size());
