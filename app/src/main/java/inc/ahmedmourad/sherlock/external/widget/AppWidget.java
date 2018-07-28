@@ -46,25 +46,24 @@ public class AppWidget extends AppWidgetProvider {
 
 		views.setEmptyView(R.id.widget_list_view, R.id.widget_empty);
 
-
-		final Intent intent = new Intent(context, IngredientsRemoteViewsService.class);
-
-		intent.putExtra("a", appWidgetId);
-
-//		Each uri must be unique in order for the widget to be updated
-		intent.setData(getUniqueDataUri(appWidgetId));
-
-		views.setRemoteAdapter(R.id.widget_list_view, intent);
-
-		// Instruct the widget manager to update the widget
-		appWidgetManager.updateAppWidget(appWidgetId, views);
-
 		return SherlockDatabase.getInstance(context)
 				.resultsDao()
 				.getAllIds()
 				.subscribeOn(Schedulers.io())
 				.observeOn(AndroidSchedulers.mainThread())
 				.subscribe(ids -> {
+
+					final Intent intent = new Intent(context, IngredientsRemoteViewsService.class);
+
+					intent.putExtra("a", appWidgetId);
+
+					// Each uri must be unique in order for the widget to be updated
+					intent.setData(getUniqueDataUri(appWidgetId));
+
+					views.setRemoteAdapter(R.id.widget_list_view, intent);
+
+					// Instruct the widget manager to update the widget
+					appWidgetManager.updateAppWidget(appWidgetId, views);
 
 				}, throwable -> ErrorUtils.general(context, throwable));
 	}

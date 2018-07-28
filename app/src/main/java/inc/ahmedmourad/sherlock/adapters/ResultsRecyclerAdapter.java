@@ -75,7 +75,10 @@ public class ResultsRecyclerAdapter extends RecyclerView.Adapter<ResultsRecycler
 
 		private void bind(@NonNull final SearchResult result) {
 
-			picasso.load(result.getChild().getPictureUrl()).into(pictureImageView);
+			picasso.load(result.getChild().getPictureUrl())
+					.placeholder(R.drawable.placeholder)
+					.error(R.drawable.placeholder)
+					.into(pictureImageView);
 
 			dateTextView.setText(result.getDate());
 			notesTextView.setText(result.getChild().getNotes());

@@ -62,6 +62,10 @@ public class SearchResultsViewModel extends ViewModel {
 						.observeOn(AndroidSchedulers.mainThread())
 						.subscribe(() -> {
 
+
+//							AppWidget.updateAppWidget(application, manager, ids);
+
+
 						}, throwable -> ErrorUtils.general(application, throwable));
 			}
 

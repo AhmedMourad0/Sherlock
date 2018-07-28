@@ -1,10 +1,15 @@
 package inc.ahmedmourad.sherlock.external.adapter;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.support.annotation.NonNull;
 import android.util.Log;
 import android.widget.RemoteViews;
 import android.widget.RemoteViewsService;
 
+import com.squareup.picasso.Picasso;
+
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -68,6 +73,8 @@ class IngredientsRemoteViewsFactory implements RemoteViewsService.RemoteViewsFac
 		views.setTextViewText(R.id.widget_result_notes, result.getChild().getNotes());
 		views.setTextViewText(R.id.widget_result_location, FirebaseContract.Database.getLocation(context, result.getChild().getLocation()));
 
+		setPicture(views, result.getChild().getPictureUrl());
+
 //		Picasso.get()
 //				.load(result.getChild().getPictureUrl())
 //				.into(views, R.id.widget_result_picture, new int[]{widgetId});
@@ -104,6 +111,26 @@ class IngredientsRemoteViewsFactory implements RemoteViewsService.RemoteViewsFac
 		Log.e("00000000000000000000000", result.toString());
 
 		return views;
+	}
+
+	private void setPicture(@NonNull final RemoteViews views, @NonNull final String pictureUrl) {
+
+		Bitmap bitmap;
+
+		try {
+			bitmap = Picasso.get()
+					.load(pictureUrl)
+//					.centerCrop()
+					.get();
+		} catch (IOException e) {
+			bitmap = null;
+			e.printStackTrace();
+		}
+
+		if (bitmap != null)
+			views.setImageViewBitmap(R.id.widget_result_picture, bitmap);
+		else
+			views.setImageViewResource(R.id.widget_result_picture, R.drawable.placeholder);
 	}
 
 	@Override
