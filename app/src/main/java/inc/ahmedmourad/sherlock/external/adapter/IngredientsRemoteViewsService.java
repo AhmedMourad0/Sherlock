@@ -7,6 +7,6 @@ public class IngredientsRemoteViewsService extends RemoteViewsService {
 
 	@Override
 	public RemoteViewsFactory onGetViewFactory(final Intent intent) {
-		return new IngredientsRemoteViewsFactory(this);
+		return new IngredientsRemoteViewsFactory(this, intent.getIntExtra("a", -1));
 	}
 }

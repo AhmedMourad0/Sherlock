@@ -95,4 +95,15 @@ public class SearchResult {
 	private int getDistanceRanking() {
 		return (int) ((Criteria.BASE_DISTANCE - getDistance()) / Criteria.BASE_DISTANCE * 100);
 	}
+
+	@Override
+	public String toString() {
+		return "SearchResult{" +
+				"child=" + child +
+				", date='" + date + '\'' +
+				", firstNameRatio=" + firstNameRatio +
+				", lastNameRatio=" + lastNameRatio +
+				", distance=" + distance +
+				'}';
+	}
 }

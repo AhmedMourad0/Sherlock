@@ -15,7 +15,6 @@ import com.bluelinelabs.conductor.RouterTransaction;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
-
 import inc.ahmedmourad.sherlock.R;
 import inc.ahmedmourad.sherlock.adapters.ResultsRecyclerAdapter;
 import inc.ahmedmourad.sherlock.model.pojo.SearchCriteria;
@@ -69,11 +68,10 @@ public class SearchResultsController extends BaseLifecycleController {
 		if (getActivity() != null)
 			viewModel = viewModelProvider(new SearchResultsViewModelFactory(getActivity().getApplication(), criteria)).get(SearchResultsViewModel.class);
 
-		if (viewModel != null) {
+		if (viewModel != null)
 			viewModel.getSearchResults().observe(this, resultEntities ->
 					adapter.updateList(ListUtils.toSearchResults(resultEntities))
 			);
-		}
 
 		return view;
 	}

@@ -11,6 +11,7 @@ import java.util.List;
 
 import inc.ahmedmourad.sherlock.model.room.entities.ResultEntity;
 import io.reactivex.Flowable;
+import io.reactivex.Single;
 
 @Dao
 public abstract class ResultsDao {
@@ -51,7 +52,13 @@ public abstract class ResultsDao {
 			ResultEntity.COLUMN_END_HEIGHT +
 			" FROM " +
 			ResultEntity.TABLE_NAME)
-	public abstract Flowable<List<ResultEntity>> getResultsFlowable();
+	public abstract Single<List<ResultEntity>> getResultsSingle();
+
+	@Query("SELECT " +
+			ResultEntity.COLUMN_ID +
+			" FROM " +
+			ResultEntity.TABLE_NAME)
+	public abstract Flowable<Integer[]> getAllIds();
 
 	@Insert(onConflict = OnConflictStrategy.REPLACE)
 	abstract void bulkInsert(final List<ResultEntity> resultsEntities);

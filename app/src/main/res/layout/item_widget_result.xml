@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -9,7 +8,7 @@
     android:paddingBottom="16dp"
     android:clickable="true"
     android:focusable="true"
-    android:foreground="?selectableItemBackground"
+    android:foreground="?android:attr/selectableItemBackground"
     android:orientation="vertical">
 
     <TextView
@@ -21,7 +20,7 @@
         android:maxLines="1"
         android:paddingBottom="8dp"
         android:scrollHorizontally="true"
-        android:text="@string/date"
+        tools:text="@string/date"
         android:textColor="@android:color/black"
         android:textSize="15sp" />
 
@@ -31,7 +30,6 @@
         android:layout_height="200dp"
         android:contentDescription="@string/child"
         android:scaleType="centerCrop"
-        app:layout_constraintDimensionRatio="1:1"
         tools:src="@drawable/placeholder" />
 
     <TextView
