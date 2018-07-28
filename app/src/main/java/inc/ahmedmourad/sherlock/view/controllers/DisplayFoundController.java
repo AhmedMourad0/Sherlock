@@ -30,33 +30,43 @@ public class DisplayFoundController extends BaseController {
 	private static final String ARG_IMAGE_BYTES = "df_ib";
 	private static final String ARG_FOUND = "df_f";
 
+	@SuppressWarnings("WeakerAccess")
 	@BindView(R.id.display_found_toolbar)
 	Toolbar toolbar;
 
+	@SuppressWarnings("WeakerAccess")
 	@BindView(R.id.display_found_picture)
 	ImageView pictureImageView;
 
+	@SuppressWarnings("WeakerAccess")
 	@BindView(R.id.display_name)
 	TextView nameTextView;
 
+	@SuppressWarnings("WeakerAccess")
 	@BindView(R.id.display_age)
 	TextView ageTextView;
 
+	@SuppressWarnings("WeakerAccess")
 	@BindView(R.id.display_gender)
 	TextView genderTextView;
 
+	@SuppressWarnings("WeakerAccess")
 	@BindView(R.id.display_height)
 	TextView heightTextView;
 
+	@SuppressWarnings("WeakerAccess")
 	@BindView(R.id.display_skin)
 	TextView skinTextView;
 
+	@SuppressWarnings("WeakerAccess")
 	@BindView(R.id.display_hair)
 	TextView hairTextView;
 
+	@SuppressWarnings("WeakerAccess")
 	@BindView(R.id.display_location)
 	TextView locationTextView;
 
+	@SuppressWarnings("WeakerAccess")
 	@BindView(R.id.display_notes)
 	TextView notesTextView;
 

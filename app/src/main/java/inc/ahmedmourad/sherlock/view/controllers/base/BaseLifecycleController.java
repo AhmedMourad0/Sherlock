@@ -13,7 +13,7 @@ import java.util.Objects;
 
 public abstract class BaseLifecycleController extends LifecycleController {
 
-	private ViewModelStore viewModelStore = new ViewModelStore();
+	private final ViewModelStore viewModelStore = new ViewModelStore();
 
 	protected ViewModelProvider viewModelProvider(@Nullable ViewModelProvider.NewInstanceFactory factory) {
 		return factory == null ? viewModelProvider() : new ViewModelProvider(viewModelStore,  factory);

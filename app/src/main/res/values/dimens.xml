@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <dimen name="dividerMarginStart">67dp</dimen>
     <dimen name="dividerMarginEnd">16dp</dimen>
     <dimen name="dividerMarginBottom">8dp</dimen>
@@ -19,5 +20,155 @@
     <dimen name="displayCardMarginEnd">8dp</dimen>
     <dimen name="displayCardMarginStart">8dp</dimen>
 
-    <dimen name="widget_margin">8dp</dimen>
+    <dimen name="widgetBarHeight">48dp</dimen>
+    <dimen name="widgetBarPaddingEnd">12dp</dimen>
+    <dimen name="widgetBarPaddingStart">12dp</dimen>
+
+    <dimen name="widgetLogoHeight">38dp</dimen>
+    <dimen name="widgetLogoPaddingBottom">8dp</dimen>
+    <dimen name="widgetLogoPaddingEnd">4dp</dimen>
+    <dimen name="widgetLogoPaddingStart">0dp</dimen>
+    <dimen name="widgetLogoPaddingTop">8dp</dimen>
+
+    <dimen name="widgetTitleTextSize">16sp</dimen>
+
+    <dimen name="dividerHeight">1dp</dimen>
+
+    <dimen name="foundPaddingBottom">40dp</dimen>
+    <dimen name="foundPaddingEnd">12dp</dimen>
+    <dimen name="foundPaddingStart">12dp</dimen>
+    <dimen name="foundPaddingTop">16dp</dimen>
+
+    <dimen name="foundLocationPaddingTop">20dp</dimen>
+    <dimen name="foundLocationTextPaddingEnd">4dp</dimen>
+    <dimen name="foundLocationTextPaddingStart">0dp</dimen>
+    <dimen name="foundLocationIconWidth">32dp</dimen>
+    <dimen name="foundLocationIconHeight">32dp</dimen>
+    <dimen name="foundLocationIconMarginEnd">8dp</dimen>
+    <dimen name="foundLocationIconMarginStart">8dp</dimen>
+
+    <dimen name="foundButtonMarginEnd">32dp</dimen>
+    <dimen name="foundButtonMarginStart">32dp</dimen>
+    <dimen name="foundButtonMarginTop">32dp</dimen>
+    <dimen name="foundButtonPadding">16dp</dimen>
+
+    <dimen name="addFoundLocationPaddingBottom">32dp</dimen>
+
+    <dimen name="addFoundHairPaddingBottom">32dp</dimen>
+
+    <dimen name="addFoundPicturePaddingBottom">16dp</dimen>
+    <dimen name="addFoundPictureWidth">84dp</dimen>
+    <dimen name="addFoundPictureHeight">84dp</dimen>
+    <dimen name="addFoundPictureTextPadding">16dp</dimen>
+    <dimen name="addFoundPictureTextSize">16sp</dimen>
+
+    <dimen name="labelPaddingEnd">12dp</dimen>
+    <dimen name="labelPaddingStart">0dp</dimen>
+    <dimen name="labelTextSize">18sp</dimen>
+    <dimen name="labelHairPaddingEnd">24dp</dimen>
+    <dimen name="labelSkinPaddingEnd">24dp</dimen>
+
+    <dimen name="seekBarIndicatorHeight">32dp</dimen>
+    <dimen name="seekBarIndicatorPaddingLeft">8dp</dimen>
+    <dimen name="seekBarIndicatorPaddingRight">8dp</dimen>
+    <dimen name="seekBarIndicatorRadius">2dp</dimen>
+
+    <dimen name="displayFoundPaddingTop">8dp</dimen>
+    <dimen name="displayFoundMarginBottom">60dp</dimen>
+
+    <dimen name="displayFoundDescriptionLabelMarginTop">8dp</dimen>
+    <dimen name="displayFoundDetailsLabelMarginTop">20dp</dimen>
+    <dimen name="displayFoundCardPaddingTop">28dp</dimen>
+    <dimen name="displayFoundCardPaddingBottom">20dp</dimen>
+
+    <dimen name="displayFoundTextSize">15sp</dimen>
+
+    <dimen name="displayFoundLocationPaddingBottom">8dp</dimen>
+
+    <dimen name="displayFoundPickersPaddingBottom">8dp</dimen>
+
+    <dimen name="displayFoundAgePickerMarginEnd">44dp</dimen>
+
+    <dimen name="recyclerPaddingBottom">4dp</dimen>
+    <dimen name="recyclerPaddingTop">4dp</dimen>
+
+    <dimen name="resultMarginStart">8dp</dimen>
+    <dimen name="resultMarginEnd">8dp</dimen>
+    <dimen name="resultMarginTop">4dp</dimen>
+    <dimen name="resultMarginBottom">4dp</dimen>
+
+    <dimen name="resultPaddingEnd">8dp</dimen>
+    <dimen name="resultPaddingStart">8dp</dimen>
+
+    <dimen name="resultMetaPaddingBottom">16dp</dimen>
+    <dimen name="resultMetaPaddingTop">16dp</dimen>
+
+    <dimen name="resultMetaUserPictureWidth">50dp</dimen>
+    <dimen name="resultMetaUserPictureHeight">50dp</dimen>
+    <dimen name="resultMetaUserTextPaddingStart">16dp</dimen>
+    <dimen name="resultMetaUserTextPaddingEnd">0dp</dimen>
+
+    <dimen name="resultUserNameTextSize">16sp</dimen>
+
+    <dimen name="resultDateTextSize">15sp</dimen>
+
+    <dimen name="resultNotesPaddingStart">12dp</dimen>
+    <dimen name="resultNotesTextSize">15sp</dimen>
+
+    <dimen name="resultLocationPaddingTop">12dp</dimen>
+    <dimen name="resultLocationPaddingBottom">16dp</dimen>
+    <dimen name="resultLocationTextSize">15sp</dimen>
+    <dimen name="resultLocationPaddingEnd">0dp</dimen>
+    <dimen name="resultLocationSpacing">4dp</dimen>
+
+    <dimen name="sectionMargin">4dp</dimen>
+    <dimen name="sectionNameTextSize">18sp</dimen>
+
+    <dimen name="sectionNamePaddingStart">4dp</dimen>
+    <dimen name="sectionNamePaddingEnd">4dp</dimen>
+    <dimen name="sectionNamePaddingTop">8dp</dimen>
+    <dimen name="sectionNamePaddingBottom">12dp</dimen>
+
+    <dimen name="widgetResultPaddingStart">8dp</dimen>
+    <dimen name="widgetResultPaddingEnd">8dp</dimen>
+    <dimen name="widgetResultPaddingTop">12dp</dimen>
+    <dimen name="widgetResultPaddingBottom">12dp</dimen>
+
+    <dimen name="widgetResultUserTextSize">15sp</dimen>
+
+    <dimen name="widgetResultDateTextSize">14sp</dimen>
+    <dimen name="widgetResultDatePaddingBottom">8dp</dimen>
+
+    <dimen name="widgetResultPictureHeight">240dp</dimen>
+
+    <dimen name="widgetResultNotesPaddingTop">12dp</dimen>
+    <dimen name="widgetResultNotesTextSize">15sp</dimen>
+
+    <dimen name="widgetResultLocationPaddingTop">12dp</dimen>
+    <dimen name="widgetResultLocationTextSize">15sp</dimen>
+    <dimen name="widgetResultLocationSpacing">4dp</dimen>
+    <dimen name="widgetResultLocationPaddingEnd">0dp</dimen>
+
+    <dimen name="genderPaddingBottom">32dp</dimen>
+    <dimen name="genderTextSize">18sp</dimen>
+    <dimen name="genderMarginEnd">32dp</dimen>
+    <dimen name="genderSpacing">0dp</dimen>
+
+    <dimen name="colorChoiceWidth">48dp</dimen>
+    <dimen name="colorChoiceHeight">48dp</dimen>
+    <dimen name="colorChoiceSpacing">20dp</dimen>
+    <dimen name="colorChoiceMarginStart">0dp</dimen>
+
+    <dimen name="skinPaddingBottom">32dp</dimen>
+
+    <dimen name="namePaddingBottom">12dp</dimen>
+    <dimen name="nameSpacing">4dp</dimen>
+
+    <dimen name="lastNamePaddingEnd">0dp</dimen>
+
+    <dimen name="firstNamePaddingStart">0dp</dimen>
+
+    <dimen name="cardCornerRadius">1dp</dimen>
+    <dimen name="cardElevation">2dp</dimen>
+
 </resources>

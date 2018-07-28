@@ -10,10 +10,11 @@ import com.bluelinelabs.conductor.Controller;
 
 public abstract class BaseController extends Controller {
 
-	public BaseController() {
+	protected BaseController() {
+
 	}
 
-	public BaseController(@Nullable Bundle args) {
+	protected BaseController(@Nullable Bundle args) {
 		super(args);
 	}
 

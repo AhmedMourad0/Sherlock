@@ -10,8 +10,8 @@ import inc.ahmedmourad.sherlock.viewmodel.SearchResultsViewModel;
 
 public class SearchResultsViewModelFactory extends ViewModelProvider.NewInstanceFactory {
 
-	private Application application;
-	private SearchCriteria criteria;
+	private final Application application;
+	private final SearchCriteria criteria;
 
 	public SearchResultsViewModelFactory(@NonNull final Application application, @NonNull final SearchCriteria criteria) {
 		this.application = application;

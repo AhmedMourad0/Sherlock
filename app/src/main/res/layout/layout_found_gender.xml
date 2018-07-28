@@ -4,16 +4,16 @@
     android:layout_height="wrap_content"
     android:gravity="center_vertical"
     android:orientation="horizontal"
-    android:paddingBottom="32dp">
+    android:paddingBottom="@dimen/genderPaddingBottom">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingEnd="12dp"
-        android:paddingStart="0dp"
+        android:paddingEnd="@dimen/labelPaddingEnd"
+        android:paddingStart="@dimen/labelPaddingStart"
+        android:textSize="@dimen/labelTextSize"
         android:text="@string/gender"
-        android:textColor="@android:color/black"
-        android:textSize="18sp" />
+        android:textColor="@android:color/black" />
 
     <RadioGroup
         android:id="@+id/found_gender_radio_group"
@@ -27,17 +27,16 @@
             android:id="@+id/found_male_radio_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="32dp"
-            android:layout_marginStart="0dp"
+            android:layout_marginEnd="@dimen/genderMarginEnd"
+            android:layout_marginStart="@dimen/genderSpacing"
             android:text="@string/male"
-            android:textSize="18sp" />
+            android:textSize="@dimen/genderTextSize" />
 
         <RadioButton
-            android:id="@+id/found_female_radio_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/female"
-            android:textSize="18sp" />
+            android:textSize="@dimen/genderTextSize" />
 
     </RadioGroup>
 

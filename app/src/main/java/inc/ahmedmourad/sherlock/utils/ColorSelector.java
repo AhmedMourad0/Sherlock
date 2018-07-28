@@ -18,8 +18,8 @@ public class ColorSelector {
 	private static final int STROKE_WIDTH = 5;
 	private static final int STROKE_COLOR = R.color.colorAccent;
 
-	private Context context;
-	private Item[] items;
+	private final Context context;
+	private final Item[] items;
 	
 	private int selectedItemId = NO_ID;
 
@@ -86,12 +86,13 @@ public class ColorSelector {
 		return Item.create(id ,view, color);
 	}
 
+	@SuppressWarnings("WeakerAccess")
 	public static class Item {
 
 		private int id;
 		private View view;
 		private int color;
-		
+
 		private GradientDrawable drawable;
 
 		@NonNull
@@ -104,33 +105,33 @@ public class ColorSelector {
 		}
 
 		private Item() {
-			
+
 		}
 
 		@IntRange(from = 0)
-		public int getId() {
+		int getId() {
 			return id;
 		}
 
-		public void setId(@IntRange(from = 0) final int id) {
+		void setId(@IntRange(from = 0) final int id) {
 			this.id = id;
 		}
 
 		@NonNull
-		public View getView() {
+		View getView() {
 			return view;
 		}
 
-		public void setView(@NonNull final View view) {
+		void setView(@NonNull final View view) {
 			this.view = view;
 		}
 
 		@ColorRes
-		public int getColor() {
+		int getColor() {
 			return color;
 		}
 
-		public void setColor(@ColorRes final int color) {
+		void setColor(@ColorRes final int color) {
 			this.color = color;
 			drawable = generateColoredCircleDrawable(getColor());
 		}
@@ -145,7 +146,7 @@ public class ColorSelector {
 		}
 
 		@NonNull
-		public GradientDrawable getDrawable() {
+		GradientDrawable getDrawable() {
 			return drawable;
 		}
 	}

@@ -31,21 +31,27 @@ import static android.app.Activity.RESULT_OK;
 
 public class SearchFoundController extends BaseFoundController {
 
+	@SuppressWarnings("WeakerAccess")
 	@BindView(R.id.toolbar)
 	Toolbar toolbar;
 
+	@SuppressWarnings("WeakerAccess")
 	@BindView(R.id.search_found_age_number_picker)
 	NumberPicker ageNumberPicker;
 
+	@SuppressWarnings("WeakerAccess")
 	@BindView(R.id.search_found_height_number_picker)
 	NumberPicker heightNumberPicker;
 
+	@SuppressWarnings("WeakerAccess")
 	@BindView(R.id.search_found_location_text_view)
 	TextView locationTextView;
 
+	@SuppressWarnings("WeakerAccess")
 	@BindView(R.id.search_found_location_image_view)
 	ImageView locationImageView;
 
+	@SuppressWarnings("WeakerAccess")
 	@BindView(R.id.search_found_search_button)
 	Button searchButton;
 

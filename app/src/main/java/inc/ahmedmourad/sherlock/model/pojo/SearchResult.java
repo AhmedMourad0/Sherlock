@@ -46,7 +46,7 @@ public class SearchResult {
 		return child;
 	}
 
-	public void setChild(@NonNull Child child) {
+	private void setChild(@NonNull Child child) {
 		this.child = child;
 	}
 

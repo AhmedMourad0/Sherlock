@@ -8,29 +8,29 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingEnd="24dp"
-        android:paddingStart="0dp"
+        android:paddingEnd="@dimen/labelHairPaddingEnd"
+        android:paddingStart="@dimen/labelPaddingStart"
+        android:textSize="@dimen/labelTextSize"
         android:text="@string/hair_color"
-        android:textColor="@android:color/black"
-        android:textSize="18sp" />
+        android:textColor="@android:color/black" />
 
     <View
         android:id="@+id/found_hair_blonde"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginStart="0dp" />
+        android:layout_width="@dimen/colorChoiceWidth"
+        android:layout_height="@dimen/colorChoiceHeight"
+        android:layout_marginEnd="@dimen/colorChoiceSpacing"
+        android:layout_marginStart="@dimen/colorChoiceMarginStart" />
 
     <View
         android:id="@+id/found_hair_brown"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginStart="0dp" />
+        android:layout_width="@dimen/colorChoiceWidth"
+        android:layout_height="@dimen/colorChoiceHeight"
+        android:layout_marginEnd="@dimen/colorChoiceSpacing"
+        android:layout_marginStart="@dimen/colorChoiceMarginStart" />
 
     <View
         android:id="@+id/found_hair_dark"
-        android:layout_width="48dp"
-        android:layout_height="48dp" />
+        android:layout_width="@dimen/colorChoiceWidth"
+        android:layout_height="@dimen/colorChoiceHeight" />
 
 </LinearLayout>

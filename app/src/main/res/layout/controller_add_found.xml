@@ -20,10 +20,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:orientation="vertical"
-            android:paddingBottom="40dp"
-            android:paddingEnd="12dp"
-            android:paddingStart="12dp"
-            android:paddingTop="16dp">
+            android:paddingBottom="@dimen/foundPaddingBottom"
+            android:paddingEnd="@dimen/foundPaddingEnd"
+            android:paddingStart="@dimen/foundPaddingStart"
+            android:paddingTop="@dimen/foundPaddingTop">
 
             <include
                 layout="@layout/layout_found_name"
@@ -35,8 +35,8 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
-                android:paddingBottom="32dp"
-                android:paddingTop="20dp"
+                android:paddingBottom="@dimen/addFoundLocationPaddingBottom"
+                android:paddingTop="@dimen/foundLocationPaddingTop"
                 tools:ignore="UseCompoundDrawables">
 
                 <TextView
@@ -45,18 +45,18 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center_vertical"
-                    android:paddingEnd="4dp"
-                    android:paddingStart="0dp"
+                    android:paddingEnd="@dimen/foundLocationTextPaddingEnd"
+                    android:paddingStart="@dimen/foundLocationTextPaddingStart"
                     android:text="@string/no_location_specified" />
 
                 <ImageView
                     android:id="@+id/add_found_location_image_view"
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginStart="8dp"
+                    android:layout_width="@dimen/foundLocationIconWidth"
+                    android:layout_height="@dimen/foundLocationIconHeight"
+                    android:layout_marginEnd="@dimen/foundLocationIconMarginEnd"
+                    android:layout_marginStart="@dimen/foundLocationIconMarginStart"
                     android:contentDescription="@string/point_location_on_map"
-                    android:src="@drawable/ic_google_maps" />
+                    app:srcCompat="@drawable/ic_google_maps" />
 
             </LinearLayout>
 
@@ -69,20 +69,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingEnd="12dp"
-                    android:paddingStart="0dp"
+                    android:paddingEnd="@dimen/labelPaddingEnd"
+                    android:paddingStart="@dimen/labelPaddingStart"
                     android:text="@string/age"
                     android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    android:textSize="@dimen/labelTextSize" />
 
                 <com.jaygoo.widget.RangeSeekBar
                     android:id="@+id/add_found_age_seek_bar"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:rsb_indicator_height="32dp"
-                    app:rsb_indicator_padding_left="8dp"
-                    app:rsb_indicator_padding_right="8dp"
+                    app:rsb_indicator_height="@dimen/seekBarIndicatorHeight"
+                    app:rsb_indicator_padding_left="@dimen/seekBarIndicatorPaddingLeft"
+                    app:rsb_indicator_padding_right="@dimen/seekBarIndicatorPaddingRight"
+                    app:rsb_indicator_radius="@dimen/seekBarIndicatorRadius"
                     app:rsb_indicator_show_mode="alwaysShow"
                     app:rsb_max="30"
                     app:rsb_min="0"
@@ -92,7 +93,6 @@
                     app:rsb_range_interval="1"
                     app:rsb_tick_mark_mode="number"
                     app:rsb_tick_mark_number="1"
-                    app:rsb_indicator_radius="2dp"
                     app:rsb_tick_mark_text_array="@array/age_marks" />
 
             </LinearLayout>
@@ -106,20 +106,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingEnd="12dp"
-                    android:paddingStart="0dp"
+                    android:paddingEnd="@dimen/labelPaddingEnd"
+                    android:paddingStart="@dimen/labelPaddingStart"
                     android:text="@string/height"
                     android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    android:textSize="@dimen/labelTextSize" />
 
                 <com.jaygoo.widget.RangeSeekBar
                     android:id="@+id/add_found_height_seek_bar"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:rsb_indicator_height="32dp"
-                    app:rsb_indicator_padding_left="8dp"
-                    app:rsb_indicator_padding_right="8dp"
+                    app:rsb_indicator_height="@dimen/seekBarIndicatorHeight"
+                    app:rsb_indicator_padding_left="@dimen/seekBarIndicatorPaddingLeft"
+                    app:rsb_indicator_padding_right="@dimen/seekBarIndicatorPaddingRight"
+                    app:rsb_indicator_radius="@dimen/seekBarIndicatorRadius"
                     app:rsb_indicator_show_mode="alwaysShow"
                     app:rsb_max="200"
                     app:rsb_min="40"
@@ -128,7 +129,6 @@
                     app:rsb_progress_radius="0.8dp"
                     app:rsb_range_interval="1"
                     app:rsb_tick_mark_mode="number"
-                    app:rsb_indicator_radius="2dp"
                     app:rsb_tick_mark_number="1"
                     app:rsb_tick_mark_text_array="@array/height_marks" />
 
@@ -148,29 +148,29 @@
                 layout="@layout/layout_found_hair"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="32dp" />
+                android:layout_marginBottom="@dimen/addFoundHairPaddingBottom" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
-                android:paddingBottom="16dp">
+                android:paddingBottom="@dimen/addFoundPicturePaddingBottom">
 
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/add_found_picture_image_view"
-                    android:layout_width="84dp"
-                    android:layout_height="84dp"
+                    android:layout_width="@dimen/addFoundPictureWidth"
+                    android:layout_height="@dimen/addFoundPictureHeight"
                     android:src="@drawable/placeholder" />
 
                 <TextView
                     android:id="@+id/add_found_picture_text_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="16dp"
+                    android:padding="@dimen/addFoundPictureTextPadding"
                     android:text="@string/choose_a_picture"
                     android:textColor="@color/colorAccent"
-                    android:textSize="16sp" />
+                    android:textSize="@dimen/addFoundPictureTextSize" />
 
             </LinearLayout>
 
@@ -191,14 +191,14 @@
                 android:id="@+id/add_found_publish_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="32dp"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginEnd="@dimen/foundButtonMarginEnd"
+                android:layout_marginStart="@dimen/foundButtonMarginStart"
+                android:layout_marginTop="@dimen/foundButtonMarginTop"
+                android:padding="@dimen/foundButtonPadding"
                 android:background="@color/colorAccent"
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?selectableItemBackground"
-                android:padding="16dp"
                 android:text="@string/publish"
                 android:textColor="@android:color/white" />
 

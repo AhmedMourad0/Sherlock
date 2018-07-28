@@ -47,9 +47,9 @@ public final class Criteria {
 		return gender == result.getChild().getGender();
 	}
 
-	public static boolean checkSkin(final int skin, @NonNull final SearchResult result) {
-		return skin == result.getChild().getSkin();
-	}
+//	public static boolean checkSkin(final int skin, @NonNull final SearchResult result) {
+//		return skin == result.getChild().getSkin();
+//	}
 
 	public static boolean checkHair(final int hair, @NonNull final SearchResult result) {
 		return hair == result.getChild().getHair();

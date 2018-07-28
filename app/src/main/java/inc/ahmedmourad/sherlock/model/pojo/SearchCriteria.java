@@ -147,6 +147,7 @@ public class SearchCriteria {
 		this.hair = hair;
 	}
 
+	@SuppressWarnings("WeakerAccess")
 	@NonNull
 	public String getLocation() {
 		return location;

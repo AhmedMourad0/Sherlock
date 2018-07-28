@@ -26,7 +26,7 @@ public class Section {
 		return name;
 	}
 
-	public void setName(@NonNull final String name) {
+	private void setName(@NonNull final String name) {
 		this.name = name;
 	}
 
@@ -35,7 +35,7 @@ public class Section {
 		return imageDrawable;
 	}
 
-	public void setImageDrawable(@DrawableRes final int imageDrawable) {
+	private void setImageDrawable(@DrawableRes final int imageDrawable) {
 		this.imageDrawable = imageDrawable;
 	}
 
@@ -44,7 +44,7 @@ public class Section {
 		return controller;
 	}
 
-	public void setController(@Nullable final Controller controller) {
+	private void setController(@Nullable final Controller controller) {
 		this.controller = controller;
 	}
 }

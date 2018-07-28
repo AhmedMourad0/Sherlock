@@ -46,30 +46,39 @@ public class AddFoundController extends BaseFoundController {
 	private static final int PLACE_PICKER_REQUEST = 1;
 	private static final int IMAGE_PICKER_REQUEST = 2;
 
+	@SuppressWarnings("WeakerAccess")
 	@BindView(R.id.toolbar)
 	Toolbar toolbar;
 
+	@SuppressWarnings("WeakerAccess")
 	@BindView(R.id.add_found_age_seek_bar)
 	RangeSeekBar ageSeekBar;
 
+	@SuppressWarnings("WeakerAccess")
 	@BindView(R.id.add_found_height_seek_bar)
 	RangeSeekBar heightSeekBar;
 
+	@SuppressWarnings("WeakerAccess")
 	@BindView(R.id.add_found_location_text_view)
 	TextView locationTextView;
 
+	@SuppressWarnings("WeakerAccess")
 	@BindView(R.id.add_found_location_image_view)
 	ImageView locationImageView;
 
+	@SuppressWarnings("WeakerAccess")
 	@BindView(R.id.add_found_picture_image_view)
 	CircleImageView pictureImageView;
 
+	@SuppressWarnings("WeakerAccess")
 	@BindView(R.id.add_found_picture_text_view)
 	TextView pictureTextView;
 
+	@SuppressWarnings("WeakerAccess")
 	@BindView(R.id.add_found_notes_edit_text)
 	TextInputEditText notesEditText;
 
+	@SuppressWarnings("WeakerAccess")
 	@BindView(R.id.add_found_publish_button)
 	Button publishButton;
 

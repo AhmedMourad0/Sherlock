@@ -4,7 +4,7 @@
     android:layout_height="match_parent">
     <View
         android:layout_width="match_parent"
-        android:layout_height="1dp"
+        android:layout_height="@dimen/dividerHeight"
         android:layout_marginBottom="@dimen/dividerMarginBottom"
         android:layout_marginEnd="@dimen/dividerMarginEnd"
         android:layout_marginStart="@dimen/dividerMarginStart"

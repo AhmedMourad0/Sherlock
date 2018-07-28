@@ -5,14 +5,14 @@
     android:baselineAligned="false"
     android:gravity="center_vertical"
     android:orientation="horizontal"
-    android:paddingBottom="12dp">
+    android:paddingBottom="@dimen/namePaddingBottom">
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:paddingEnd="4dp"
-        android:paddingStart="0dp">
+        android:paddingEnd="@dimen/nameSpacing"
+        android:paddingStart="@dimen/firstNamePaddingStart">
 
         <android.support.design.widget.TextInputEditText
             android:id="@+id/found_first_name_edit_text"
@@ -27,8 +27,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:paddingEnd="0dp"
-        android:paddingStart="4dp">
+        android:paddingEnd="@dimen/lastNamePaddingEnd"
+        android:paddingStart="@dimen/nameSpacing">
 
         <android.support.design.widget.TextInputEditText
             android:id="@+id/found_last_name_edit_text"

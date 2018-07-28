@@ -3,7 +3,6 @@ package inc.ahmedmourad.sherlock.external.adapter;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.support.annotation.NonNull;
-import android.util.Log;
 import android.widget.RemoteViews;
 import android.widget.RemoteViewsService;
 
@@ -27,13 +26,10 @@ class IngredientsRemoteViewsFactory implements RemoteViewsService.RemoteViewsFac
 
 	private List<SearchResult> results = new ArrayList<>();
 
-	private int widgetId;
-
 	private Disposable disposable;
 
-	IngredientsRemoteViewsFactory(final Context context, final int widgetId) {
+	IngredientsRemoteViewsFactory(final Context context) {
 		this.context = context.getApplicationContext();
-		this.widgetId = widgetId;
 	}
 
 	@Override
@@ -75,41 +71,6 @@ class IngredientsRemoteViewsFactory implements RemoteViewsService.RemoteViewsFac
 
 		setPicture(views, result.getChild().getPictureUrl());
 
-//		Picasso.get()
-//				.load(result.getChild().getPictureUrl())
-//				.into(views, R.id.widget_result_picture, new int[]{widgetId});
-
-//		try {
-//			views.setImageViewBitmap(R.id.widget_result_picture, Picasso.get()
-//					.load(result.getChild().getPictureUrl())
-//					.get());
-//		} catch (IOException e) {
-//			e.printStackTrace();
-//		}
-
-//		Log.e("00000000000000000000000", "0");
-//		Picasso.get()
-//				.load(result.getChild().getPictureUrl())
-//				.into(new Target() {
-//					@Override
-//					public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
-//						views.setImageViewBitmap(R.id.widget_result_picture, bitmap);
-//					}
-//
-//					@Override
-//					public void onBitmapFailed(Exception e, Drawable errorDrawable) {
-//						ErrorUtils.general(context, e);
-//						views.setImageViewResource(R.id.widget_result_picture, R.drawable.placeholder);
-//					}
-//
-//					@Override
-//					public void onPrepareLoad(Drawable placeHolderDrawable) {
-//
-//					}
-//				});
-
-		Log.e("00000000000000000000000", result.toString());
-
 		return views;
 	}
 
@@ -120,7 +81,6 @@ class IngredientsRemoteViewsFactory implements RemoteViewsService.RemoteViewsFac
 		try {
 			bitmap = Picasso.get()
 					.load(pictureUrl)
-//					.centerCrop()
 					.get();
 		} catch (IOException e) {
 			bitmap = null;

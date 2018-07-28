@@ -38,19 +38,7 @@
     <string name="tap_to_select">Tap to select</string>
 
     <string name="camera" translatable="false">Camera</string>
-    <string name="name">Name:</string>
 
-    <string name="cover_photo">Cover photo</string>
-    <string name="username">Faculty of Engineering</string>
-    <string name="email">fac_something@eng.com</string>
-    <string name="employees">6000 Students, 20 Employees</string>
-    <string name="rating">0.0 / 5.0</string>
-    <string name="badges">Badges</string>
-    <string name="time_waster">Time Waster</string>
-    <string name="creativity_killer">Creativity Killer</string>
-    <string name="zombies_factory">Zombie Factory</string>
-    <string name="see_more">See More</string>
-    <string name="general_details">General Details</string>
     <string name="picture">Picture</string>
     <string name="description">Description</string>
     <string name="details">Details</string>

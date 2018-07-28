@@ -1,8 +1,8 @@
 package inc.ahmedmourad.sherlock.view.activity;
 
+import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 
 import com.bluelinelabs.conductor.ChangeHandlerFrameLayout;
 import com.bluelinelabs.conductor.Conductor;
@@ -22,6 +22,7 @@ import io.reactivex.disposables.Disposable;
 
 public class MainActivity extends AppCompatActivity {
 
+	@SuppressWarnings("WeakerAccess")
 	@BindView(R.id.controller_container)
 	ChangeHandlerFrameLayout container;
 

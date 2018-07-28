@@ -15,8 +15,8 @@
     android:layout_height="match_parent"
     android:clipToPadding="false"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    android:paddingBottom="4dp"
-    android:paddingTop="4dp"
-    android:background="#EFEBE9" />
+    android:paddingBottom="@dimen/recyclerPaddingBottom"
+    android:paddingTop="@dimen/recyclerPaddingTop"
+    android:background="@color/colorRecyclerBackground" />
 
 </android.support.design.widget.CoordinatorLayout>

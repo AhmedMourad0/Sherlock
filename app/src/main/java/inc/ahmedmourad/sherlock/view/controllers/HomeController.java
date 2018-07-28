@@ -25,9 +25,11 @@ import inc.ahmedmourad.sherlock.view.controllers.base.BaseController;
 
 public class HomeController extends BaseController {
 
+	@SuppressWarnings("WeakerAccess")
 	@BindView(R.id.toolbar)
 	Toolbar toolbar;
 
+	@SuppressWarnings("WeakerAccess")
 	@BindView(R.id.home_recycler)
 	RecyclerView recyclerView;
 
@@ -38,6 +40,11 @@ public class HomeController extends BaseController {
 	@NonNull
 	public static HomeController newInstance() {
 		return new HomeController();
+	}
+
+	@SuppressWarnings("WeakerAccess")
+	public HomeController() {
+
 	}
 
 	@NonNull

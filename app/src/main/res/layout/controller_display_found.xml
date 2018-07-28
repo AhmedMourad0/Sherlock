@@ -55,7 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:clipToPadding="false"
-        android:paddingTop="8dp"
+        android:paddingTop="@dimen/displayFoundPaddingTop"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <LinearLayout
@@ -68,7 +68,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/displayHeaderMarginBottom"
                 android:layout_marginStart="@dimen/displayHeaderMarginStart"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="@dimen/displayFoundDescriptionLabelMarginTop"
                 android:fontFamily="sans-serif"
                 android:text="@string/description"
                 android:textColor="@color/colorFontSection" />
@@ -78,14 +78,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/displayCardMarginEnd"
                 android:layout_marginStart="@dimen/displayCardMarginStart"
-                app:backgroundTint="#ffffff"
-                app:cardCornerRadius="1dp"
-                app:cardElevation="2dp">
+                app:backgroundTint="@android:color/white"
+                app:cardCornerRadius="@dimen/cardCornerRadius"
+                app:cardElevation="@dimen/cardElevation">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/displayFoundCardPaddingTop"
+                    android:paddingBottom="@dimen/displayFoundCardPaddingBottom">
 
                     <TextView
                         android:id="@+id/display_name"
@@ -93,7 +95,6 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_marginBottom="@dimen/displayMarginBottom"
-                        android:layout_marginTop="28dp"
                         android:drawablePadding="@dimen/displayDrawablePadding"
                         android:drawableStart="@drawable/ic_username"
                         android:fontFamily="sans-serif"
@@ -102,7 +103,7 @@
                         android:paddingEnd="@dimen/displayPaddingEnd"
                         android:paddingStart="@dimen/displayPaddingStart"
                         android:text="@string/not_available"
-                        android:textSize="15sp" />
+                        android:textSize="@dimen/displayFoundTextSize" />
 
                     <include
                         layout="@layout/layout_display_divider"
@@ -124,7 +125,7 @@
                         android:paddingEnd="@dimen/displayPaddingEnd"
                         android:paddingStart="@dimen/displayPaddingStart"
                         android:text="@string/not_available"
-                        android:textSize="15sp" />
+                        android:textSize="@dimen/displayFoundTextSize" />
 
                     <include
                         layout="@layout/layout_display_divider"
@@ -146,7 +147,7 @@
                         android:paddingEnd="@dimen/displayPaddingEnd"
                         android:paddingStart="@dimen/displayPaddingStart"
                         android:text="@string/not_available"
-                        android:textSize="15sp" />
+                        android:textSize="@dimen/displayFoundTextSize" />
 
                     <include
                         layout="@layout/layout_display_divider"
@@ -168,7 +169,7 @@
                         android:paddingEnd="@dimen/displayPaddingEnd"
                         android:paddingStart="@dimen/displayPaddingStart"
                         android:text="@string/not_available"
-                        android:textSize="15sp" />
+                        android:textSize="@dimen/displayFoundTextSize" />
 
                     <include
                         layout="@layout/layout_display_divider"
@@ -190,7 +191,7 @@
                         android:paddingEnd="@dimen/displayPaddingEnd"
                         android:paddingStart="@dimen/displayPaddingStart"
                         android:text="@string/not_available"
-                        android:textSize="15sp" />
+                        android:textSize="@dimen/displayFoundTextSize" />
 
                     <include
                         layout="@layout/layout_display_divider"
@@ -202,7 +203,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginBottom="20dp"
                         android:layout_marginTop="@dimen/displayMarginTop"
                         android:drawablePadding="@dimen/displayDrawablePadding"
                         android:drawableStart="@drawable/ic_hair"
@@ -212,7 +212,7 @@
                         android:paddingEnd="@dimen/displayPaddingEnd"
                         android:paddingStart="@dimen/displayPaddingStart"
                         android:text="@string/not_available"
-                        android:textSize="15sp" />
+                        android:textSize="@dimen/displayFoundTextSize" />
 
                 </LinearLayout>
 
@@ -223,7 +223,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/displayHeaderMarginBottom"
                 android:layout_marginStart="@dimen/displayHeaderMarginStart"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="@dimen/displayFoundDetailsLabelMarginTop"
                 android:fontFamily="sans-serif"
                 android:text="@string/details"
                 android:textColor="@color/colorFontSection" />
@@ -231,17 +231,19 @@
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="60dp"
+                android:layout_marginBottom="@dimen/displayFoundMarginBottom"
                 android:layout_marginEnd="@dimen/displayCardMarginEnd"
                 android:layout_marginStart="@dimen/displayCardMarginStart"
-                app:backgroundTint="#ffffff"
-                app:cardCornerRadius="1dp"
-                app:cardElevation="2dp">
+                app:backgroundTint="@android:color/white"
+                app:cardCornerRadius="@dimen/cardCornerRadius"
+                app:cardElevation="@dimen/cardElevation">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/displayFoundCardPaddingTop"
+                    android:paddingBottom="@dimen/displayFoundCardPaddingBottom">
 
                     <TextView
                         android:id="@+id/display_location"
@@ -249,7 +251,6 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_marginBottom="@dimen/displayMarginBottom"
-                        android:layout_marginTop="28dp"
                         android:drawablePadding="@dimen/displayDrawablePadding"
                         android:drawableStart="@drawable/ic_location"
                         android:fontFamily="sans-serif"
@@ -258,7 +259,7 @@
                         android:paddingEnd="@dimen/displayPaddingEnd"
                         android:paddingStart="@dimen/displayPaddingStart"
                         android:text="@string/not_available"
-                        android:textSize="15sp" />
+                        android:textSize="@dimen/displayFoundTextSize" />
 
                     <include
                         layout="@layout/layout_display_divider"
@@ -270,7 +271,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginBottom="20dp"
                         android:layout_marginTop="@dimen/displayMarginTop"
                         android:drawablePadding="@dimen/displayDrawablePadding"
                         android:drawableStart="@drawable/ic_notes"
@@ -280,7 +280,7 @@
                         android:paddingEnd="@dimen/displayPaddingEnd"
                         android:paddingStart="@dimen/displayPaddingStart"
                         android:text="@string/not_available"
-                        android:textSize="15sp" />
+                        android:textSize="@dimen/displayFoundTextSize" />
 
                 </LinearLayout>
 

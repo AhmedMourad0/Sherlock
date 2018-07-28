@@ -43,12 +43,15 @@ public abstract class BaseFoundController extends BaseLifecycleController implem
 	@BindView(R.id.found_hair_dark)
 	protected View hairDarkView;
 
+	@SuppressWarnings("WeakerAccess")
 	@BindView(R.id.found_first_name_edit_text)
 	protected TextInputEditText firstNameEditText;
 
+	@SuppressWarnings("WeakerAccess")
 	@BindView(R.id.found_last_name_edit_text)
 	protected TextInputEditText lastNameEditText;
 
+	@SuppressWarnings("WeakerAccess")
 	@BindView(R.id.found_gender_radio_group)
 	protected RadioGroup genderRadioGroup;
 

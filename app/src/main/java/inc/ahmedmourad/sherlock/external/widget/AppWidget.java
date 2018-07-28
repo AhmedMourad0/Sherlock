@@ -21,7 +21,7 @@ import io.reactivex.schedulers.Schedulers;
 
 public class AppWidget extends AppWidgetProvider {
 
-	private DisposablesSparseArray disposables = new DisposablesSparseArray();
+	private final DisposablesSparseArray disposables = new DisposablesSparseArray();
 
 	@Override
 	public void onUpdate(final Context context, final AppWidgetManager appWidgetManager, final int[] appWidgetIds) {
@@ -54,8 +54,6 @@ public class AppWidget extends AppWidgetProvider {
 				.subscribe(ids -> {
 
 					final Intent intent = new Intent(context, IngredientsRemoteViewsService.class);
-
-					intent.putExtra(IngredientsRemoteViewsService.EXTRA_WIDGET_ID, appWidgetId);
 
 					// Each uri must be unique in order for the widget to be updated
 					intent.setData(getUniqueDataUri(appWidgetId));

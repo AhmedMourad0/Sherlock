@@ -102,6 +102,7 @@ public class Child {
 		return firstName;
 	}
 
+	@SuppressWarnings("WeakerAccess")
 	public void setFirstName(@NonNull String firstName) {
 		this.firstName = firstName;
 	}
@@ -111,6 +112,7 @@ public class Child {
 		return lastName;
 	}
 
+	@SuppressWarnings("WeakerAccess")
 	public void setLastName(@NonNull String lastName) {
 		this.lastName = lastName;
 	}
@@ -120,6 +122,7 @@ public class Child {
 		return location;
 	}
 
+	@SuppressWarnings("WeakerAccess")
 	public void setLocation(@NonNull String location) {
 		this.location = location;
 	}
@@ -164,6 +167,7 @@ public class Child {
 		return gender;
 	}
 
+	@SuppressWarnings("WeakerAccess")
 	public void setGender(int gender) {
 		this.gender = gender;
 	}
@@ -172,6 +176,7 @@ public class Child {
 		return skin;
 	}
 
+	@SuppressWarnings("WeakerAccess")
 	public void setSkin(int skin) {
 		this.skin = skin;
 	}
@@ -180,6 +185,7 @@ public class Child {
 		return hair;
 	}
 
+	@SuppressWarnings("WeakerAccess")
 	public void setHair(int hair) {
 		this.hair = hair;
 	}
@@ -198,6 +204,7 @@ public class Child {
 		return notes;
 	}
 
+	@SuppressWarnings("WeakerAccess")
 	public void setNotes(@NonNull String notes) {
 		this.notes = notes;
 	}

@@ -14,4 +14,5 @@
 
     <color name="colorDivider">#80CBC4</color>
     <color name="colorFontSection">#c8616161</color>
+    <color name="colorRecyclerBackground">#EFEBE9</color>
 </resources>

@@ -56,6 +56,7 @@ public class ResultEntity {
 	@Ignore
 	public static final String COLUMN_END_HEIGHT = "end_height";
 
+	@SuppressWarnings("WeakerAccess")
 	@PrimaryKey(autoGenerate = true)
 	@ColumnInfo(name = COLUMN_ID)
 	public int id;

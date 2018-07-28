@@ -20,10 +20,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:orientation="vertical"
-            android:paddingBottom="40dp"
-            android:paddingEnd="12dp"
-            android:paddingStart="12dp"
-            android:paddingTop="16dp">
+            android:paddingBottom="@dimen/foundPaddingBottom"
+            android:paddingEnd="@dimen/foundPaddingEnd"
+            android:paddingStart="@dimen/foundPaddingStart"
+            android:paddingTop="@dimen/foundPaddingTop">
 
             <include
                 layout="@layout/layout_found_name"
@@ -35,8 +35,8 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
-                android:paddingBottom="8dp"
-                android:paddingTop="20dp"
+                android:paddingBottom="@dimen/displayFoundLocationPaddingBottom"
+                android:paddingTop="@dimen/foundLocationPaddingTop"
                 tools:ignore="UseCompoundDrawables">
 
                 <TextView
@@ -45,18 +45,18 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center_vertical"
-                    android:paddingEnd="4dp"
-                    android:paddingStart="0dp"
+                    android:paddingEnd="@dimen/foundLocationTextPaddingEnd"
+                    android:paddingStart="@dimen/foundLocationTextPaddingStart"
                     android:text="@string/no_last_known_location_specified" />
 
                 <ImageView
                     android:id="@+id/search_found_location_image_view"
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginStart="8dp"
+                    android:layout_width="@dimen/foundLocationIconWidth"
+                    android:layout_height="@dimen/foundLocationIconHeight"
+                    android:layout_marginEnd="@dimen/foundLocationIconMarginEnd"
+                    android:layout_marginStart="@dimen/foundLocationIconMarginStart"
                     android:contentDescription="@string/point_location_on_map"
-                    android:src="@drawable/ic_google_maps" />
+                    app:srcCompat="@drawable/ic_google_maps" />
 
             </LinearLayout>
 
@@ -65,22 +65,22 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
-                android:paddingBottom="8dp">
+                android:paddingBottom="@dimen/displayFoundPickersPaddingBottom">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingEnd="12dp"
-                    android:paddingStart="0dp"
+                    android:paddingEnd="@dimen/labelPaddingEnd"
+                    android:paddingStart="@dimen/labelPaddingStart"
+                    android:textSize="@dimen/labelTextSize"
                     android:text="@string/age"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    android:textColor="@android:color/black" />
 
                 <inc.ahmedmourad.sherlock.custom.ProperNumberPicker
                     android:id="@+id/search_found_age_number_picker"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="44dp"
+                    android:layout_marginEnd="@dimen/displayFoundAgePickerMarginEnd"
                     app:maxValue="30"
                     app:minValue="0"
                     app:value="15" />
@@ -88,11 +88,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingEnd="12dp"
-                    android:paddingStart="0dp"
+                    android:paddingEnd="@dimen/labelPaddingEnd"
+                    android:paddingStart="@dimen/labelPaddingStart"
+                    android:textSize="@dimen/labelTextSize"
                     android:text="@string/height"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    android:textColor="@android:color/black" />
 
                 <inc.ahmedmourad.sherlock.custom.ProperNumberPicker
                     android:id="@+id/search_found_height_number_picker"
@@ -124,14 +124,14 @@
                 android:id="@+id/search_found_search_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="32dp"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginEnd="@dimen/foundButtonMarginEnd"
+                android:layout_marginStart="@dimen/foundButtonMarginStart"
+                android:layout_marginTop="@dimen/foundButtonMarginTop"
+                android:padding="@dimen/foundButtonPadding"
                 android:background="@color/colorAccent"
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?selectableItemBackground"
-                android:padding="16dp"
                 android:text="@string/search"
                 android:textColor="@android:color/white" />
 

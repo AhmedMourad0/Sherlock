@@ -22,7 +22,7 @@ import inc.ahmedmourad.sherlock.model.pojo.SearchResult;
 
 public class ResultsRecyclerAdapter extends RecyclerView.Adapter<ResultsRecyclerAdapter.ViewHolder> {
 
-	private List<SearchResult> resultsList = new ArrayList<>();
+	private final List<SearchResult> resultsList = new ArrayList<>();
 	private final OnResultSelectedListener listener;
 
 	public ResultsRecyclerAdapter(@NonNull final OnResultSelectedListener listener) {
@@ -65,7 +65,7 @@ public class ResultsRecyclerAdapter extends RecyclerView.Adapter<ResultsRecycler
 		@BindView(R.id.result_location)
 		TextView locationTextView;
 
-		private Picasso picasso;
+		private final Picasso picasso;
 
 		ViewHolder(final View view) {
 			super(view);

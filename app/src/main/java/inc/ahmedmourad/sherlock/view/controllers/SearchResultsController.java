@@ -25,9 +25,11 @@ import inc.ahmedmourad.sherlock.viewmodel.factories.SearchResultsViewModelFactor
 
 public class SearchResultsController extends BaseLifecycleController {
 
+	@SuppressWarnings("WeakerAccess")
 	@BindView(R.id.toolbar)
 	Toolbar toolbar;
 
+	@SuppressWarnings("WeakerAccess")
 	@BindView(R.id.search_found_results_recycler)
 	RecyclerView recyclerView;
 
@@ -53,7 +55,7 @@ public class SearchResultsController extends BaseLifecycleController {
 	@Override
 	protected View onCreateView(@NonNull LayoutInflater inflater, @NonNull ViewGroup container) {
 
-		final View view = inflater.inflate(R.layout.controller_search_found_results, container, false);
+		final View view = inflater.inflate(R.layout.controller_search_results, container, false);
 
 		unbinder = ButterKnife.bind(this, view);
 

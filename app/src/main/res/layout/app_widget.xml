@@ -1,28 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@android:color/white">
+    android:background="@android:color/white"
+    tools:ignore="Overdraw">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_height="@dimen/widgetBarHeight"
         android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:paddingEnd="12dp"
-        android:paddingStart="12dp">
+        android:paddingEnd="@dimen/widgetBarPaddingEnd"
+        android:paddingStart="@dimen/widgetBarPaddingStart">
 
         <ImageView
             android:id="@+id/widget_icon"
             android:layout_width="wrap_content"
-            android:layout_height="38dp"
+            android:layout_height="@dimen/widgetLogoHeight"
             android:layout_gravity="center_vertical"
             android:contentDescription="@string/app_name"
-            android:paddingBottom="8dp"
-            android:paddingEnd="4dp"
-            android:paddingStart="0dp"
-            android:paddingTop="8dp"
+            android:paddingBottom="@dimen/widgetLogoPaddingBottom"
+            android:paddingEnd="@dimen/widgetLogoPaddingEnd"
+            android:paddingStart="@dimen/widgetLogoPaddingStart"
+            android:paddingTop="@dimen/widgetLogoPaddingTop"
             android:scaleType="centerInside" />
 
         <TextView
@@ -32,7 +34,7 @@
             android:layout_weight="1"
             android:fontFamily="sans-serif-condensed"
             android:textColor="@android:color/black"
-            android:textSize="16sp"
+            android:textSize="@dimen/widgetTitleTextSize"
             android:textStyle="bold"
             android:scrollHorizontally="true"
             android:maxLines="1"
@@ -43,7 +45,7 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="1dp"
+        android:layout_height="@dimen/dividerHeight"
         android:background="@color/colorDivider" />
 
     <FrameLayout
