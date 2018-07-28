@@ -55,7 +55,7 @@ public class AppWidget extends AppWidgetProvider {
 
 					final Intent intent = new Intent(context, IngredientsRemoteViewsService.class);
 
-					intent.putExtra("a", appWidgetId);
+					intent.putExtra(IngredientsRemoteViewsService.EXTRA_WIDGET_ID, appWidgetId);
 
 					// Each uri must be unique in order for the widget to be updated
 					intent.setData(getUniqueDataUri(appWidgetId));

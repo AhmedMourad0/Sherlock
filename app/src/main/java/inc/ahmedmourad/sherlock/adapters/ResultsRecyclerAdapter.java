@@ -81,7 +81,7 @@ public class ResultsRecyclerAdapter extends RecyclerView.Adapter<ResultsRecycler
 					.into(pictureImageView);
 
 			dateTextView.setText(result.getDate());
-			notesTextView.setText(result.getChild().getNotes());
+			notesTextView.setText(FirebaseContract.Database.getNotes(itemView.getContext(), result.getChild().getNotes()));
 			locationTextView.setText(FirebaseContract.Database.getLocation(itemView.getContext(), result.getChild().getLocation()));
 
 			itemView.setOnClickListener(v -> listener.onResultSelectedListener(result.getChild()));

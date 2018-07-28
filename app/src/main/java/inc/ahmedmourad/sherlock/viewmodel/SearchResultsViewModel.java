@@ -53,7 +53,7 @@ public class SearchResultsViewModel extends ViewModel {
 				final List<SearchResult> results = new ArrayList<>();
 
 				for (DataSnapshot snapshot : dataSnapshot.getChildren())
-					results.add(SearchResult.create(Long.parseLong(snapshot.getKey()), Child.fromDataSnapshot(snapshot)));
+					results.add(SearchResult.create(application, Long.parseLong(snapshot.getKey()), Child.fromDataSnapshot(snapshot)));
 
 				criteria.filter(results);
 
@@ -61,10 +61,6 @@ public class SearchResultsViewModel extends ViewModel {
 						.subscribeOn(Schedulers.io())
 						.observeOn(AndroidSchedulers.mainThread())
 						.subscribe(() -> {
-
-
-//							AppWidget.updateAppWidget(application, manager, ids);
-
 
 						}, throwable -> ErrorUtils.general(application, throwable));
 			}

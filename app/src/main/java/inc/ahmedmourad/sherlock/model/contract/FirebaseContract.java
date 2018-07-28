@@ -113,6 +113,15 @@ public final class FirebaseContract {
 		}
 
 		@NonNull
+		public static String getNotes(@NonNull final Context context, @NonNull final String notes) {
+
+			if (TextUtils.isEmpty(notes))
+				return context.getString(R.string.not_available);
+
+			return notes;
+		}
+
+		@NonNull
 		public static String getAge(@NonNull final Context context, final int startAge, final int endAge) {
 			return context.getString(R.string.years_range, startAge + " - " + endAge);
 		}

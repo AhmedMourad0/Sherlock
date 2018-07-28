@@ -1,9 +1,8 @@
 package inc.ahmedmourad.sherlock.model.pojo;
 
+import android.content.Context;
 import android.support.annotation.NonNull;
-
-import java.sql.Date;
-import java.text.DateFormat;
+import android.text.format.DateUtils;
 
 import inc.ahmedmourad.sherlock.model.room.entities.ResultEntity;
 import inc.ahmedmourad.sherlock.utils.Criteria;
@@ -31,9 +30,9 @@ public class SearchResult {
 	}
 
 	@NonNull
-	public static SearchResult create(final long dateMillis, @NonNull final Child child) {
+	public static SearchResult create(@NonNull final Context context, final long dateMillis, @NonNull final Child child) {
 		final SearchResult result = new SearchResult();
-		result.setDate(dateMillis);
+		result.setDate(context, dateMillis);
 		result.setChild(child);
 		return result;
 	}
@@ -56,8 +55,13 @@ public class SearchResult {
 		return date;
 	}
 
-	public void setDate(long dateMillis) {
-		this.date = DateFormat.getDateTimeInstance(DateFormat.SHORT, DateFormat.SHORT).format(new Date(dateMillis));
+	private void setDate(@NonNull final Context context, final long dateMillis) {
+		this.date = DateUtils.getRelativeDateTimeString(context,
+				dateMillis,
+				DateUtils.MINUTE_IN_MILLIS,
+				DateUtils.YEAR_IN_MILLIS,
+				0
+		).toString();
 	}
 
 	private void setDate(@NonNull String date) {
