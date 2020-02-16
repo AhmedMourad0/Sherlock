@@ -1,6 +1,0 @@
-*.iml
-.gradle
-/local.properties
-app/libs/
-app/src/main/res/drawable-nodpi/
-app/src/main/res/drawable-v24/
